@@ -9,25 +9,14 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Vojtovo dobrodrůžo.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Vojtovo dobrodrůžo" startnode="43" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="D1A98D41-A8E1-4E22-92F8-FFED17BEBA49" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">[[silnice->Untitled Passage 1]]
-
-tw-passage #bg {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-image: url("file:///C:/Users/Milou%C5%A1/Documents/Twine/P%C5%99%C3%ADb%C4%9Bhy/obrazky/hospoda.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+<tw-storydata name="Vojtovo dobrodrůžo" startnode="43" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="D1A98D41-A8E1-4E22-92F8-FFED17BEBA49" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 tw-passage {
   background: rgba(0,0,0,0.45);
   padding: 2em;
   border-radius: 12px;
 }tw-sidebar {
   display: none;
-  }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Silnice" color="red"></tw-tag><tw-tag name="hospoda" color="orange"></tw-tag><tw-tag name="Peklo" color="red"></tw-tag><tw-tag name="Sklad" color="green"></tw-tag><tw-tag name="Dobříš" color="yellow"></tw-tag><tw-passagedata pid="1" name=" Unitiled Passage 123" tags="" position="1425,800" size="100,100">(display: &quot;UI Inventar&quot;)
+  }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Silnice" color="red"></tw-tag><tw-tag name="hospoda" color="orange"></tw-tag><tw-tag name="Peklo" color="red"></tw-tag><tw-tag name="Sklad" color="green"></tw-tag><tw-tag name="Dobříš" color="yellow"></tw-tag><tw-passagedata pid="1" name=" Unitiled Passage 123" tags="" position="1425,800" size="100,100">(display: &quot;UI Inventar&quot;)
 Jedete asi dvacet minut dle tvého odhadu. Zastavíte u nějaké plechové haly v průmyslovém areálu. Otevřou se velká vrata a náklaďák zacouvá dovnitř. Když je auto celé uvnitř, vrata se opět zavřou. Vypadá to tady jako nějaké skladiště. Jsou tady nějaké bedny , sudy s naftou a nějaké ýbušniny podle obrázků na bednách. Vyskáčete ven z auta a teď je potřeba všechno včetně tajemné bedny vyndat ven. Než stihnete vyndat první bednu, uslyšíte prásknout dveře. Stojí tam 4 rebelové s puškou. Když zjistí že nejsou krytí, schovají se za bedny které jsou vyskládány hned po straně. Vy se schováte za auto. Nechcete aby to tady vybouchlo a tak zatím střílíte jen varovně. Oni také nestřílejí přímo. Najednou se ozve ze strany rebelů &quot;Hej, zastavte na chvíli tu palbu. Nikdo z nás nechce aby to tady bouchlo, ne ?&quot; střelba opravdu utichne na obou stranách. &quot; Chceme jen trochu zásob. Je tam toho dost pro všechny.&quot;  Na to četař odpoví &quot; Nevím proč bych měl věřit někomu jako jste vy ? Na pár vteřin je ticho, ale hned potom se ozve výstřel. Vojákovi vedle tebe se podlomí nohy, chytí se za břicho a se zakrvácenýma rukama se na tebe dívá výrazem &quot;proč já?&quot;. Padne na zem a ty poodstoupíš s děšením o dva kroky dozadu. Bohužel zakopneš a spadneš zády na zem před auto. Rebelové postupují směrem k autu.
 (if: $kudla &gt;0) [ Než se stihneš zvednout, stojí nad tebou jeden z rebelů. Instiktivně jak z nějakého amerického filmu vytáhneš kudlu a bodneš mu jí do žeber. Ostatní vojáci doběhnou z poza auta a volajî na tebe ať si nasedneš taky do auta.]
 (if: $kudla &lt;=0)[Než se stihneš zvednout, stojí nad tebou jeden z rebelů. Nemáš žádnou zbraň. Plazíš se od něj po zádech. On vytajhuje kudlu a chystá se tě zapíchnout. Napřahuje se a v ten moment se mu rozletí hlava na kusy. Jsi překvapený, nevíš kdo ti pomohl. Ostatní vojáci doběhnou z poza auta a volají na tebe ať naskočíš taky do auta.]
@@ -62,7 +51,18 @@ Sedí tu jeden mladík, má dlouhé vlasy a není mu vidět moc do tváře. Taky
 (else:)[
 (if: $salam &gt; 0) [Kousek salámu $salam ks], (if: $chleba &gt; 0) [Chleba $chleba ks], (if: $penize &gt; 0) [💵Peníze $penize Kč], (if: $rum &gt; 0) [Rum $rum ks], 
 (if: $svitilna &gt; 0) [Svítilna $svitilna ks] (if: $lahev &gt; 0) [Láhev s vodou $lahev ks], (if: $kombinacky &gt; 0) [kombinačky $kombinacky ks], (if: $mapa &gt; 0)[Mapa $mapa] (if: $vojhadry &gt; 0) [voj. hadry $vojhadry ks], (if: $kudla &gt; 0) [Kudla $kudla ks],(if: $maskace &gt; 0) [maskace $maskace ks],
-]</tw-passagedata><tw-passagedata pid="7" name="Untitled Passage" tags="" position="800,300" size="100,100">Co ted má Vojta dělat se svým životem?
+] ---
+(link: &quot;💾 Uložit hru&quot;)[
+    (if: (save-game: &quot;Hra&quot;))[
+        (reload:)
+    ]
+]
+(if: (saved-games:) contains &quot;Hra&quot;)[
+    |  (link: &quot;📂 Načíst hru&quot;)[
+        (load-game: &quot;Hra&quot;)
+    ]
+]
+</tw-passagedata><tw-passagedata pid="7" name="Untitled Passage" tags="" position="800,300" size="100,100">Co ted má Vojta dělat se svým životem?
 Na Kladně potkal pár lidí z městských služeb kteří uklízejí bordel a odpadky u slinice.
 Jejich předák se na tebe podívá a hned je mu jasné že jsi ve srabu. Pár takových už viděl.
 Beze slova ti podá koště a lopatu. 
@@ -137,7 +137,7 @@ A pak si vlastně uvědomíš že si mu na to ani nekývnul. No co teď už nen�
 Dojedete do nějakého průmyslového areálu. Řidič chcípne motor a všichni vylezete ven. Jdete směrem k nějaké hale, vypadá to že je to tu opuštěné. 
 Vacek podá jednomu štípačky aby cvaknul vysací zámek na dveřích. 
 Do ticha v areálu se ozve hlasité cvaknutí. Teď honem dovnitř.
-[[ pokračuj -&gt; passage 1]]</tw-passagedata><tw-passagedata pid="18" name="Untitled Passage 108" tags="" position="225,725" size="100,100">(display: &quot;UI Inventar&quot;)
+[[ pokračuj -&gt; passage 1]]</tw-passagedata><tw-passagedata pid="18" name="Untitled Passage 108" tags="" position="200,775" size="100,100">(display: &quot;UI Inventar&quot;)
 Přikrčen se pomalu přibližuješ, schováš se za nějaké bedny.
 Vidíš jak ke skupince přichází nějaká osoba.
 Vojáci vše zahodí a postaví se do pozoru.
@@ -146,7 +146,7 @@ Vojáci vše zahodí a postaví se do pozoru.
 &quot;Pane, ano pane soudruhu plukovníku.&quot; řekne jeden z vojáků.
 &quot;Jakmile vlak zastaví chci aby byl celý obsah vlaku naložen do toho vozu.
 Vemte si pár chalpů ať jsou při překládce v pohotovosti. Očekávám nějakou návštěvu.
-Nechci abych přišel o další chlapy jako minule. 
+Nechci přijít o další chlapy jako minule. 
 Jo a abych nezapoměl, máme tady nové rekruty. Desátník Svoboda je sem pošle.
 Další ruce se budu hodit. V támhleté bedně jsou uniformy tak je koukejte oblíct a připravit.&quot; Ukáže směrem k tobě a odejde do gazíku kterým odjíždí pryč.
 &quot;Sakra to půjdou přímo sem.&quot; řekne si Vojta.
@@ -215,7 +215,7 @@ Hej Vojto, já mám docela strach z toho že by sem mohl někdo opravdu příjí
 
 [[Jasně -&gt;Untitled Passage 118]]
 
-[[Ne -&gt;Untitled Passage 117]]</tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 116" tags="" position="425,800" size="100,100">(display: &quot;UI Inventar&quot;)
+[[Ne -&gt;Untitled Passage 117]]</tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 116" tags="" position="400,925" size="100,100">(display: &quot;UI Inventar&quot;)
 Šáhneš do první bedny a najdeš tam vojenské hadry a také malou kudlu.
 Vše si oblečeš a svoje oblečení zahodíš.
 (set: $kudla to +1)(set: $vojhadry to +1)
@@ -410,7 +410,7 @@ Jelikož jde od předu do zadu vlakem tak tě napadlo jít do předních kupé p
  [[pokračuj  -&gt;Untitled Passage 58]]</tw-passagedata><tw-passagedata pid="81" name="Untitled Passage 57" tags="" position="4150,275" size="100,100">&quot;to se mi to ale sedí&quot; řekneš si.
 Přijde k tobě průvodčí a ty nemáš jízdenku. Co si čekal že se stane? že tě obejde bez povšimnutí ? To asi těžko.
 &quot;Na příští zastávce vystupuješ hajzle&quot;
- [[pokračuj  -&gt;Untitled Passage 59]]</tw-passagedata><tw-passagedata pid="82" name="Untitled Passage 58" tags="" position="4550,125" size="100,100">Jsi jako Tom Cruise. V momentě kdy jde dál k zadním kupé si vlezeš do kupé kde je pán se psem.  [[pokračuj  -&gt;Untitled Passage 47]]</tw-passagedata><tw-passagedata pid="83" name="Untitled Passage 59" tags="" position="4350,200" size="100,100">Vlak zastaví a průvodčí tě vytáhne za límec z vlaku.
+ [[pokračuj  -&gt;Untitled Passage 59]]</tw-passagedata><tw-passagedata pid="82" name="Untitled Passage 58" tags="" position="4600,75" size="100,100">Jsi jako Tom Cruise. V momentě kdy jde dál k zadním kupé si vlezeš do kupé kde je pán se psem.  [[pokračuj  -&gt;Untitled Passage 47]]</tw-passagedata><tw-passagedata pid="83" name="Untitled Passage 59" tags="" position="4350,200" size="100,100">Vlak zastaví a průvodčí tě vytáhne za límec z vlaku.
 Mrskne s tebou tak že sebou plácneš na zem. Než se stihneš posbírat tak tě praští do hlavy něco co opravdu nečekáš. Chvíli přemýšlíš co to je a koukáš že je to batoh. otočíš se a slyšíš jak na tebe volá průvodčí v odjíždějícím vlaku &quot; to sis tady zapoměl&quot; a odjíždí dál.
 Super mám batoh a zdá se že v něm něco je.
 Koukneš co vněm je.  [[pokračuj  -&gt;Untitled Passage 63]]</tw-passagedata><tw-passagedata pid="84" name="Untitled Passage 6" tags="" position="1425,100" size="100,100">Vítej na pracáku kde visí duhový nápis &quot;Arbeit macht frai&quot; 
@@ -552,7 +552,7 @@ Jdeš to omrknout. - Linka Benešov -&gt; Kladno ZRUŠENA -. To je trochu nemil�
 V tom vidíš nějakého týpka co vykukuje škvírou mezi dveřmi a dělá na tebe &quot;pst&quot;
 &quot;Co to je idiota&quot; řekneš si. 
 Chceš jít za ním ? [[pokračuj  -&gt;Untitled Passage 81]]
-Budeš dělat že si ho nevšímáš ? [[pokračuj  -&gt;Untitled Passage 82]]</tw-passagedata><tw-passagedata pid="104" name="Untitled Passage 79" tags="" position="4775,0" size="100,100">(display: &quot;UI Inventar&quot;)
+Budeš dělat že si ho nevšímáš ? [[pokračuj  -&gt;Untitled Passage 82]]</tw-passagedata><tw-passagedata pid="104" name="Untitled Passage 79" tags="" position="4925,0" size="100,100">(display: &quot;UI Inventar&quot;)
 &lt;img src=&quot;https://grolix59.github.io/Vojtovo-dobrodruzo/hospoda.png&quot;&gt;
 Sedíš a čumíš na bednu. Fotbal zrovna nedávají ale koukají tu na krasobruslení.
 Koukáš na to opravdu zarytě a ikdž nevíš proč, začne ti téct slza po tváři.
@@ -583,21 +583,21 @@ Ten hlas patřil osbě která je s tebou v místnosti. Nebyl to žádný sen.
 
 [[pokračuj  -&gt;Untitled Passage 84]]</tw-passagedata><tw-passagedata pid="110" name="Untitled Passage 84" tags="" position="5475,300" size="100,100">(display: &quot;UI Inventar&quot;)
 &quot;Kdo by to byl řekl že budu mít takové štěstí&quot; řekne osoba.
-&quot;ale ne, ty ses nám už probudil.&quot; pokračuje.
-Sundá ti pytel z hlavy, konečně vidíš toho blázna. 
+&quot;Ale ne, ty ses nám už probudil.&quot; pokračuje.
+Sundá ti pytel z hlavy a konečně vidíš toho blázna. 
 &quot;Co ode mě chcš ty hajzle?&quot; zeptáš se ho.
 
 Vyšinutý blázen vypadá jako Albert Einstein na tripu.
-Všude jsou popsané tabule s různými výpočty a obrázky. Na jedné nástěnce jsou fotky lidí a je tam i ta tvoje. Je to nějaká laborka? možná doupě nájemného vraha?
+Všude jsou popsané tabule s různými výpočty a obrázky. Na jedné nástěnce jsou fotky lidí a je tam i ta tvoje. Je to nějaká laborka? Možná doupě nájemného vraha?
 
 [[pokračuj  -&gt;Untitled Passage 85]]</tw-passagedata><tw-passagedata pid="111" name="Untitled Passage 85" tags="" position="5350,275" size="100,100">(display: &quot;UI Inventar&quot;)
-&quot;Ahoj, Vojto. My se moc neznáme, ale to tě nemusí trápit. Za chvíli, až to tady dokončím už mě znát nemusíš.&quot; Ani ti nedá moc prostoru aby ses mohl ptát dál a spustí na tebe monolog.
+&quot;Ahoj, Vojto. My se neznáme, ale to tě nemusí trápit. Za chvíli, až to tady dokončím už mě znát nemusíš.&quot; Ani ti nedá moc prostoru aby ses mohl ptát dál a spustí na tebe monolog.
 
 &quot;Omlouvám se za takové chování, není to pro vědce jako já moc běžné. Teď ti řeknu to podstatné co by si měl vědět. Jistě si viděl nebo četl nějaké dílo o paralelních světech že ?
 No tak ať chceš nebo ne, tak se to opravdu děje. Já nejsem z této... ehm, tvojí reality.
 Moje realita je na tom trochu hůř než ta tvoje, Jedná se o to že v mé realitě Rusové neopustili Čechy a dokonce máme jednoho vůdce je to diktátor.
 Představ si to tak jako by byl Hitler z Ruska. Je to trochu padlé na hlavu a všude se po Česku mluví česky, ale vše se změnilo. Země vůbec neprosperuje a všude je chaos, 
-Rusáci si u nás založili kolonii a jsou tady jako na zvráceném dětském hřišti. A teď to hlavní. Neptej se mě jak... neptej se mě proč, ale ty by si mohl být tím dílkem do skládačky tak aby se tohle dalo ukončit. Bohužel nevím jestli se po tom budeš moci vrátit zpět sem do této reality. Já jsem to totiž ještě nezkjoušel, posílám lidi pouze do té mojí. 
+Komouši si u nás založili kolonii a jsou tady jako na zvráceném dětském hřišti. A teď to hlavní. Neptej se mě jak... neptej se mě proč, ale ty by si mohl být tím dílkem do skládačky tak aby se tohle dalo ukončit. Bohužel nevím jestli se po tom budeš moci vrátit zpět sem do této reality. Já jsem to totiž ještě nezkjoušel, posílám lidi pouze do té mojí. 
 Až se trochu rozkoukáš najdi Ivana Antonova, je to můj zdroj a o všem ví.
 Pokud by si to zapoměl napíšu ti to.&quot; Něco načmárá na kus papíru a dá ti ho do kapsy.
 &quot;Teď se prosím prospi než to budu mít hotové. &quot;
@@ -633,7 +633,7 @@ Vhůru pryč z tohodle místa. Jsi v něčem jako v Benešově nebo aspoň to ta
 Je to nějaká skladka za nádražím. &quot;Teoreticky by mohl fungovat vlak&quot; řekne si Vojta.
 
 Chceš se mrknout směrem k nádraží [[pokračuj  -&gt;Untitled Passage 89]]
-Chceš se podívat do města a zjisti něco víc [[pokračuj  -&gt;Untitled Passage 90]]</tw-passagedata><tw-passagedata pid="115" name="Untitled Passage 89" tags="" position="100,750" size="100,100">(display: &quot;UI Inventar&quot;)
+Chceš se podívat do města a zjisti něco víc [[pokračuj  -&gt;Untitled Passage 90]]</tw-passagedata><tw-passagedata pid="115" name="Untitled Passage 89" tags="" position="50,750" size="100,100">(display: &quot;UI Inventar&quot;)
 Jdeš kolem nádraží. nevidíš ani živáčka. náhle vidíš mrtváčka.
 Leží tady nějaký nebožák, je vidět že už tu chvíli je.
 Nedá ti to a hned vedle něj si ublinkneš.
@@ -694,7 +694,7 @@ Ale jestli mi za to dáš svoje oblečení můžeš si vzít tohle.&quot;
 
 Vytáhne maskáče, vojenské boty, a črný svetr.
 
-Jestli si to chceš prohodit [[pokračuj  -&gt;Untitled Passage 97]]</tw-passagedata><tw-passagedata pid="123" name="Untitled Passage 96" tags="" position="1100,575" size="100,100">(display: &quot;UI Inventar&quot;)
+Jestli si to chceš prohodit [[pokračuj  -&gt;Untitled Passage 97]]</tw-passagedata><tw-passagedata pid="123" name="Untitled Passage 96" tags="" position="1075,550" size="100,100">(display: &quot;UI Inventar&quot;)
  &quot;Klasickej zaplivanej pajzl&quot; Vojta si povzdechne.
  (if: $maskace &gt; 0)[
 Všichni se otočí kdo přišel, prohlédnou si co máš na sobě a zase se věnují tomu co dělali.
@@ -726,7 +726,7 @@ Chceš jít za týpkem nebo se otočíš a půjdeš ven ?
 Týpek [[Pokračuj-&gt;Untitled Passage 100]]
 Jít ven [[Pokračuj-&gt;Untitled Passage 101]]</tw-passagedata><tw-passagedata pid="127" name="mista" tags="" position="450,75" size="100,100">(set: $Janek to false)
 (set: $Karel to false)
-(set: $Mirek to false)</tw-passagedata><tw-passagedata pid="128" name=" Unitiled Passage 124" tags="" position="1525,850" size="100,100">(display: &quot;UI Inventar&quot;)
+(set: $Mirek to false)</tw-passagedata><tw-passagedata pid="128" name=" Unitiled Passage 124" tags="" position="1550,850" size="100,100">(display: &quot;UI Inventar&quot;)
 &quot;To byla šlupka co ? Já jsem nákej Ivan.&quot; řakne ti řidič Ivan a podává ti ruku.
 Podáš mu ruku taky a odpovíš mu. &quot;Já jsem Vojta&quot; Všimneš si že mu chybí dva prsty a taky pár zubů. Těžko říct zda o to přišel v armádě nebo už sem tak přišel.
 Než se ho na stihneš zeptat ozve se jeho vysílačka. &quot; Svobodníku Hajný, ohlašte svojí pozici a stav akce. Přepínám. .....  &quot; Tady Svobodník Hajný pane. Hlásím že jsme byli přepadeni na překladišti v Hale 8. Jedeme směrem na další překladište. Přepínám. ..... &quot;Jeďte přes Dobříš do Berouna. Záslku už tam očekávají. Žádné další zastávky. To je rozkaz. Přepínám a končím.&quot; ..... 
@@ -832,7 +832,7 @@ Vyskáčete z auta. &quot;Kde je Tonda?&quot; zeptá se Vacek rebela který sesk
 
  [[Pokračuj-&gt; passage 14]]
 </tw-passagedata><tw-passagedata pid="141" name=" passage 14" tags="" position="2450,625" size="100,100">(display: &quot;UI Inventar&quot;)
-Sednete si na rospadlou zíďku a Vacek vyndá něco jako sešívačku. Nastavíš ránu a bez mrknutí oka ti nasází stehy jedne za druhým. Bolestí se ti svírá noha v pěst. &quot;Trochu to štíplo co ?&quot; dodá Vacek a poleje ti to kořalkou. Rány zaceleny a hurá na výměnu kola.
+Sednete si na rozspadlou zíďku a Vacek vyndá něco jako sešívačku. Nastavíš ránu a bez mrknutí oka ti nasází stehy jedne za druhým. Bolestí se ti svírá noha v pěst. &quot;Trochu to štíplo co ?&quot; dodá Vacek a poleje ti to kořalkou. Rány zaceleny a hurá na výměnu kola.
 
 Dá vám to docela zabrat, ale po půl hoďce je hotovo. Rezerva byla naštěstí dofouknutá.
 &quot;Dobrá práce Vojto, já věděl že jsi kluk do nepohody.&quot; řekne Vacek a uznale se na tebe usměje. 
@@ -852,7 +852,7 @@ Tak co vy na to ?&quot; zeptá se Vacek.
 &quot;Já to chci mít už za sebou. Nechci se táhnout do Berouna. Zapal to tady a zmizme vocaď.&quot; Řekne Karel.
 
  [[1.-&gt; passage 15]] Pojedeme do Berouna
-  [[2.-&gt; passage 16]] Souhlasím s Karlem, nechci do Berouna.</tw-passagedata><tw-passagedata pid="142" name=" passage 15" tags="" position="2525,500" size="100,100">(display: &quot;UI Inventar&quot;)
+  [[2.-&gt; passage 16]] Souhlasím s Karlem, nechci do Berouna.</tw-passagedata><tw-passagedata pid="142" name=" passage 15" tags="" position="2525,475" size="100,100">(display: &quot;UI Inventar&quot;)
 &quot;Je rozhodnuto. Jedeme do Berouna.&quot; Řekne Vacek a na Karlovi vidíš že z toho není nadšený. Očividně má k Vackovi dobrý vztah nebo mu možná něco dluží, tak s vámi jede dál.
 Naskočíte do auta. Ty a Vacek sedíte vpředu, Karel sedí zase na korbě s puškou.
 Nějakou chvilku jedete směrem na Dobříš. 
@@ -861,10 +861,30 @@ Máš ted prostor se na cokoli zeptat
  [[Zajímá tě co se to se všema tady děje ? -&gt; passage 17]]
 
   [[Zajímají tě jen červená čára kolem Prahy ? -&gt; passage 18]]
-</tw-passagedata><tw-passagedata pid="143" name=" passage 16" tags="" position="2900,575" size="100,100">(display: &quot;UI Inventar&quot;)
+</tw-passagedata><tw-passagedata pid="143" name=" passage 16" tags="" position="2900,550" size="100,100">(display: &quot;UI Inventar&quot;)
 &quot;No tak honem vyrážíme teda směr Vlašim.&quot; zvolá Vacek.
-Karel se jen na tebe usměje 
-Všichni nasedáte do auta, ty vpředu s Vacekem </tw-passagedata><tw-passagedata pid="144" name=" passage 17" tags="" position="2675,575" size="100,100">(display: &quot;UI Inventar&quot;)
+Karel se na tebe usměje, udělal si mu tím určitě radost. 
+Všichni nasedáte do auta, ty vpředu s Vackem a Karel si zase naskočí zezadu.
+
+Nejedete nijak dlouho a přijiždíte do Vlašimi.
+Vacek zastaví na karji silnice kde stojí nějaký statek u rybníka.
+&quot;Čekejte tady, jdu to zařídit.&quot; řekne Vacek a jde ke vratům tojo statku.
+Kouknete na sebe s Karlem skrz okýnko které je za tebou v kabině a kývnete na sebe jen abyste si potvrdili že jste na svých místech. 
+
+Po chvilce se otevřou dveře na vratech a Vacek zmizí za nima.
+Uběhne cca 10 minut dle tvého odhadu a Vacek se vrací zpátky k autu. Nějaký chlap otevře vrata a Vacek zajede s autem na dvůr. Chcípne motor a vy vyskáčete ven.
+&quot;Tak kluci tohle je Jenda.&quot; řekne Vcek&quot; všichni se seznámíte, poplácáte a jde se dovnitř.
+Jenda hned za dveřmi vyndá láhev pálenky a skleničky. Zde slušné chování ještě nevymizelo. Sklaničky ofouká od prachu, asi mu sem zas tak hosti často nechodí.
+&quot;Tak pánové Vacek mi tady řekl asi všechno a musíme se dát do práce. Náklaďák musíme ukrýt a to nadobro. Já navrhuju ho utopit tady naproti v rybníku. Mám tady záložní auto, ale to co vezete se vám tam takhle nevejde. Cože je to v tý bedně ?&quot; zeptá se Jenda.
+Pro nás nic tak důležitýho, ale místo na to najdem.&quot; Odvětí Vacek.
+Dlouze se na sebe podívají, a Jenda pokračuje dál.
+&quot;Mám tady starou vojenskou Nivu, ale je potřeba jí dát trochu do pucu. Díly na to tady mám. 
+
+&quot;Já jsem dělal s autama, to zmáknem.&quot; Ozve se Karel
+
+No tak dohodnuto
+
+[[pokračuj-&gt; passage 20]]</tw-passagedata><tw-passagedata pid="144" name=" passage 17" tags="" position="2650,575" size="100,100">(display: &quot;UI Inventar&quot;)
 &quot;Hele nejsem úplně místní, ale co se tady kolem děje ?
 To se celý svět zbláznil že se tohle může stát ? &quot; Zeptáš se ...
 Vacek na tebe chvíli zírá jako by nechápal na co se ptáš.
@@ -889,7 +909,7 @@ Nějakou dobu si povídáte o jeho životě psance a že pomáhá potřebným kd
 
 Než se naděješ, jste v Dobříši.
 
-  [[Pokračuj -&gt; passage 19]]</tw-passagedata><tw-passagedata pid="146" name=" passage 19" tags="Dobříš" position="2725,700" size="100,100">(display: &quot;UI Inventar&quot;)
+  [[Pokračuj -&gt; passage 19]]</tw-passagedata><tw-passagedata pid="146" name=" passage 19" tags="Dobříš" position="2750,725" size="100,100">(display: &quot;UI Inventar&quot;)
 Jste v Dobříši. V ulicích je docale klid. Vacek zaparkuje hned na kraji města.
 Vyleze ven, obejde auto a jde za Karlem, chvíli si povídají, ale moc jim nerozumíš. Pak se zastaví u tebe a řekne ti že nám jde zařídit průjezd a ať čekáme v autě že tu bude hned.
 </tw-passagedata><tw-passagedata pid="147" name=" Unitiled Passage 125" tags="" position="1650,800" size="100,100">(display: &quot;UI Inventar&quot;)
@@ -907,7 +927,7 @@ Jim se pořád něco nelíbí.  Doufám že to jednou v armádě někam dotáhnu
 Nechceš mu brát jeho iluze o tom že by měl na to být generál a jen mu to odkejváš.
 [[ pokračuj -&gt; Unitiled Passage 128]]
 
-</tw-passagedata><tw-passagedata pid="149" name=" Unitiled Passage 127" tags="Dobříš" position="1775,950" size="100,100">(display: &quot;UI Inventar&quot;)
+ </tw-passagedata><tw-passagedata pid="149" name=" Unitiled Passage 127" tags="Dobříš" position="1775,950" size="100,100">(display: &quot;UI Inventar&quot;)
 Projíždíte městem,  Ivan to tady asi zná. Kouká se kolem jestli je cesta čistá a žádní rebelové nám nestojí v cestě. Odbočíte na křižovatce vpravo a když srovnáte kola vidíte v dálce auto co stojí v protisměru a bliká na vás světly. Ivan tě poprosí aby si mu vyndal dalekohled který je v přihrádce u spolujezdce aby se podíval. Hrábneš pro něj a ochotně mu ho podáš. &quot;Ty vole, to jsou naši. &quot; Dojedete k autu a zastaví vás důstojník s dalšími vojáky. Desátník přistoupí k oknu řidiče a povídá &quot;Vojáci, dobrá práce. Dva nastoupí k vám do auta pro obranu a z velitelství máme nařízeno abyste celou zásilku dopravili až na místo určení.&quot; a ukáže mapu Ivanovi.
 
 &quot;No to je ale na Kladně, ne ?&quot; Zeptá se Ivan.
@@ -930,11 +950,18 @@ Opatrně objedete stojící auto a jedete směr Kladno.
 
 &quot;Vypadá to že toto není úplně jednoduchá cesta ale pokud mi to pomůže se dostat na Kladno a najít toho týpka, budu to muset překousnout.&quot; Řekne si Vojta.
 
+&quot;Tak čekej, já mám neít někoho kdo se jmenuje Ivan Antonov a tohle to se jmenuje taky Ivan.
+Jenže těžko říct jestli je to on. Divno-vědec mi řekl že nemám nikomu věřit. 
+A tenhle je takovej komoušskej fanatik. Když se ho zeptám, tak mě může buď naprášit a zabít nebo se ho zeptám, bude to on a vše vyřeším rychleji.
+
+
+
 
 
 </tw-passagedata><tw-passagedata pid="152" name="Untitled Passage 22" tags="" position="4900,750" size="100,100">Pokud si chceš objednat pivo [[pokračuj  -&gt;Untitled Passage 74]
 Můžeš tady sedět a povídat si dál[[pokračuj  -&gt;Untitled Passage 75]
-(pokud jsi potkal Mirka [[pokračuj  -&gt;Untitled Passage 72]</tw-passagedata></tw-storydata>
+(pokud jsi potkal Mirka [[pokračuj  -&gt;Untitled Passage 72]</tw-passagedata><tw-passagedata pid="153" name=" passage 20" tags="" position="3025,550" size="100,100">(display: &quot;UI Inventar&quot;)
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
