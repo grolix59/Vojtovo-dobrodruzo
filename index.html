@@ -948,13 +948,17 @@ A tenhle je takovej komoušskej fanatik. Když se ho zeptám, tak mě může bu�
 Můžeš tady sedět a povídat si dál[[pokračuj  -&gt;Untitled Passage 75]
 (pokud jsi potkal Mirka [[pokračuj  -&gt;Untitled Passage 72]</tw-passagedata><tw-passagedata pid="153" name=" passage 20" tags="" position="3025,550" size="100,100">(display: &quot;UI Inventar&quot;)
 </tw-passagedata><tw-passagedata pid="154" name="header" tags="header" position="525,225" size="100,100">{
-&lt;div align=&quot;right&quot; style=&quot;font-size: 0.85em; opacity: 0.7; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 15px;&quot;&gt;
-    (link: &quot;💾 Uložit hru&quot;)[(if: (save-game: &quot;Hra&quot;))[(reload:)]]
-    (if: (saved-games:) contains &quot;Hra&quot;)[
-        | (link: &quot;📂 Načíst hru&quot;)[(load-game: &quot;Hra&quot;)]
+(link: &quot;💾 Uložit hru&quot;)[
+    (if: (save-game: &quot;Hra&quot;))[
+        (set: $ukladaciZprava to &quot; (Uloženo!)&quot;)
+        (replace: ?zprava)[$ukladaciZprava]
     ]
-&lt;/div&gt;
+] |zprava&gt;[]
+(if: (saved-games:) contains &quot;Hra&quot;)[
+    | (link: &quot;📂 Načíst hru&quot;)[(load-game: &quot;Hra&quot;)]
+]
 }
+
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
