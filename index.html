@@ -9,14 +9,9 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Vojtovo dobrodrůžo.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Vojtovo dobrodrůžo" startnode="43" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="D1A98D41-A8E1-4E22-92F8-FFED17BEBA49" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
-tw-passage {
-  background: rgba(0,0,0,0.45);
-  padding: 2em;
-  border-radius: 12px;
-}tw-sidebar {
+<tw-storydata name="Vojtovo dobrodrůžo" startnode="43" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="D1A98D41-A8E1-4E22-92F8-FFED17BEBA49" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon {
   display: none;
-  }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Silnice" color="red"></tw-tag><tw-tag name="hospoda" color="orange"></tw-tag><tw-tag name="Peklo" color="red"></tw-tag><tw-tag name="Sklad" color="green"></tw-tag><tw-tag name="Dobříš" color="yellow"></tw-tag><tw-passagedata pid="1" name=" Unitiled Passage 123" tags="" position="1425,800" size="100,100">(display: &quot;UI Inventar&quot;)
+  }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Silnice" color="red"></tw-tag><tw-tag name="hospoda" color="orange"></tw-tag><tw-tag name="Peklo" color="red"></tw-tag><tw-tag name="Sklad" color="green"></tw-tag><tw-tag name="Dobříš" color="yellow"></tw-tag><tw-tag name="header" color="blue"></tw-tag><tw-passagedata pid="1" name=" Unitiled Passage 123" tags="" position="1425,800" size="100,100">(display: &quot;UI Inventar&quot;)
 Jedete asi dvacet minut dle tvého odhadu. Zastavíte u nějaké plechové haly v průmyslovém areálu. Otevřou se velká vrata a náklaďák zacouvá dovnitř. Když je auto celé uvnitř, vrata se opět zavřou. Vypadá to tady jako nějaké skladiště. Jsou tady nějaké bedny , sudy s naftou a nějaké ýbušniny podle obrázků na bednách. Vyskáčete ven z auta a teď je potřeba všechno včetně tajemné bedny vyndat ven. Než stihnete vyndat první bednu, uslyšíte prásknout dveře. Stojí tam 4 rebelové s puškou. Když zjistí že nejsou krytí, schovají se za bedny které jsou vyskládány hned po straně. Vy se schováte za auto. Nechcete aby to tady vybouchlo a tak zatím střílíte jen varovně. Oni také nestřílejí přímo. Najednou se ozve ze strany rebelů &quot;Hej, zastavte na chvíli tu palbu. Nikdo z nás nechce aby to tady bouchlo, ne ?&quot; střelba opravdu utichne na obou stranách. &quot; Chceme jen trochu zásob. Je tam toho dost pro všechny.&quot;  Na to četař odpoví &quot; Nevím proč bych měl věřit někomu jako jste vy ? Na pár vteřin je ticho, ale hned potom se ozve výstřel. Vojákovi vedle tebe se podlomí nohy, chytí se za břicho a se zakrvácenýma rukama se na tebe dívá výrazem &quot;proč já?&quot;. Padne na zem a ty poodstoupíš s děšením o dva kroky dozadu. Bohužel zakopneš a spadneš zády na zem před auto. Rebelové postupují směrem k autu.
 (if: $kudla &gt;0) [ Než se stihneš zvednout, stojí nad tebou jeden z rebelů. Instiktivně jak z nějakého amerického filmu vytáhneš kudlu a bodneš mu jí do žeber. Ostatní vojáci doběhnou z poza auta a volajî na tebe ať si nasedneš taky do auta.]
 (if: $kudla &lt;=0)[Než se stihneš zvednout, stojí nad tebou jeden z rebelů. Nemáš žádnou zbraň. Plazíš se od něj po zádech. On vytajhuje kudlu a chystá se tě zapíchnout. Napřahuje se a v ten moment se mu rozletí hlava na kusy. Jsi překvapený, nevíš kdo ti pomohl. Ostatní vojáci doběhnou z poza auta a volají na tebe ať naskočíš taky do auta.]
@@ -52,16 +47,7 @@ Sedí tu jeden mladík, má dlouhé vlasy a není mu vidět moc do tváře. Taky
 (if: $salam &gt; 0) [Kousek salámu $salam ks], (if: $chleba &gt; 0) [Chleba $chleba ks], (if: $penize &gt; 0) [💵Peníze $penize Kč], (if: $rum &gt; 0) [Rum $rum ks], 
 (if: $svitilna &gt; 0) [Svítilna $svitilna ks] (if: $lahev &gt; 0) [Láhev s vodou $lahev ks], (if: $kombinacky &gt; 0) [kombinačky $kombinacky ks], (if: $mapa &gt; 0)[Mapa $mapa] (if: $vojhadry &gt; 0) [voj. hadry $vojhadry ks], (if: $kudla &gt; 0) [Kudla $kudla ks],(if: $maskace &gt; 0) [maskace $maskace ks],
 ] ---
-(link: &quot;💾 Uložit hru&quot;)[
-    (if: (save-game: &quot;Hra&quot;))[
-        (reload:)
-    ]
-]
-(if: (saved-games:) contains &quot;Hra&quot;)[
-    |  (link: &quot;📂 Načíst hru&quot;)[
-        (load-game: &quot;Hra&quot;)
-    ]
-]
+
 </tw-passagedata><tw-passagedata pid="7" name="Untitled Passage" tags="" position="800,300" size="100,100">Co ted má Vojta dělat se svým životem?
 Na Kladně potkal pár lidí z městských služeb kteří uklízejí bordel a odpadky u slinice.
 Jejich předák se na tebe podívá a hned je mu jasné že jsi ve srabu. Pár takových už viděl.
@@ -961,6 +947,14 @@ A tenhle je takovej komoušskej fanatik. Když se ho zeptám, tak mě může bu�
 </tw-passagedata><tw-passagedata pid="152" name="Untitled Passage 22" tags="" position="4900,750" size="100,100">Pokud si chceš objednat pivo [[pokračuj  -&gt;Untitled Passage 74]
 Můžeš tady sedět a povídat si dál[[pokračuj  -&gt;Untitled Passage 75]
 (pokud jsi potkal Mirka [[pokračuj  -&gt;Untitled Passage 72]</tw-passagedata><tw-passagedata pid="153" name=" passage 20" tags="" position="3025,550" size="100,100">(display: &quot;UI Inventar&quot;)
+</tw-passagedata><tw-passagedata pid="154" name="header" tags="header" position="525,225" size="100,100">{
+&lt;div align=&quot;right&quot; style=&quot;font-size: 0.85em; opacity: 0.7; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 15px;&quot;&gt;
+    (link: &quot;💾 Uložit hru&quot;)[(if: (save-game: &quot;Hra&quot;))[(reload:)]]
+    (if: (saved-games:) contains &quot;Hra&quot;)[
+        | (link: &quot;📂 Načíst hru&quot;)[(load-game: &quot;Hra&quot;)]
+    ]
+&lt;/div&gt;
+}
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
